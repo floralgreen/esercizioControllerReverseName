@@ -12,7 +12,7 @@ public class NameController {
     @Autowired
     private NameService nameService;
 
-    @GetMapping("/getName")
+    @GetMapping("/returnName")
     public ResponseEntity<String> getName(@RequestParam String name){
         return ResponseEntity.ok().body(name);
     }
